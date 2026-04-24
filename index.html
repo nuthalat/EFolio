@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejasvi Nuthalapati | E-Folio</title>
+    <meta
+      name="description"
+      content="A personal portfolio website for Tejasvi Nuthalapati showcasing projects, impact, and references."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <a class="logo" href="#top">E-Folio</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="hero-content container">
+        <p class="eyebrow">Personal Brand Website</p>
+        <h1>Hi, I'm Tejasvi Nuthalapati.</h1>
+        <p class="subtitle">
+          I build impactful digital experiences and practical AI-driven solutions.
+          This website captures highlights of my work, outcomes, and useful references.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#projects">Explore Projects</a>
+          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>What I focus on</h2>
+        </div>
+        <p class="lead">
+          I focus on creating products and workflows that are user-friendly, reliable,
+          and measurable. My work blends software engineering, portfolio storytelling,
+          and continuous learning.
+        </p>
+        <div class="chips">
+          <span>Web Development</span>
+          <span>AI Workflows</span>
+          <span>Automation</span>
+          <span>Performance</span>
+          <span>Product Thinking</span>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+          <p class="lead">
+            Add, remove, or edit these cards based on your exact project history.
+          </p>
+          <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section container" id="timeline">
+        <div class="section-heading">
+          <p class="eyebrow">Journey</p>
+          <h2>Milestones</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Built a strong technical foundation</h3>
+            <p>
+              Developed full-stack fundamentals and practical delivery discipline through
+              projects and continuous learning.
+            </p>
+          </li>
+          <li>
+            <h3>Shipped portfolio-ready outcomes</h3>
+            <p>
+              Turned ideas into working products with clear architecture, readable code,
+              and measurable impact.
+            </p>
+          </li>
+          <li>
+            <h3>Expanded into AI-enhanced workflows</h3>
+            <p>
+              Integrated modern tools and AI patterns to improve speed, quality, and
+              maintainability.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section section-alt" id="references">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">References</p>
+            <h2>Useful Public Resources</h2>
+          </div>
+          <ul class="reference-list">
+            <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a> — Front-end and web standards reference.</li>
+            <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> — Project hosting and collaboration platform.</li>
+            <li><a href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a> — Performance and accessibility best practices.</li>
+            <li><a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> — Interface and design collaboration workflows.</li>
+            <li><a href="https://www.python.org/" target="_blank" rel="noreferrer">Python.org</a> — Language documentation and ecosystem resources.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something meaningful</h2>
+        </div>
+        <p class="lead">
+          Reach out for collaborations, internships, and software opportunities.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@example.com">Email Me</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Tejasvi Nuthalapati. Built with clarity and purpose.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
