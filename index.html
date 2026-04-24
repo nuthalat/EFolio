@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tejasvi Nuthalapati | E-Folio</title>
+    <title>Tejasvi Nuthalapati — Portfolio</title>
     <meta
       name="description"
-      content="A personal portfolio website for Tejasvi Nuthalapati showcasing projects, impact, and references."
+      content="Senior Software Engineer with 9+ years building cloud-native platforms, high-scale data systems, and enterprise integrations. Portfolio with impact metrics and selected work."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,132 +14,287 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/tejasvi.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/tejasvi.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero" id="top">
-      <nav class="nav container">
-        <a class="logo" href="#top">E-Folio</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#references">References</a></li>
+      <nav class="nav container" aria-label="Primary">
+        <a class="logo" href="#top" aria-label="Go to top">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Tejasvi</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#leadership">Leadership</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <section class="hero-content container">
-        <p class="eyebrow">Personal Brand Website</p>
-        <h1>Hi, I'm Tejasvi Nuthalapati.</h1>
-        <p class="subtitle">
-          I build impactful digital experiences and practical AI-driven solutions.
-          This website captures highlights of my work, outcomes, and useful references.
-        </p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="#projects">Explore Projects</a>
-          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+      <section class="hero-content container" aria-label="Hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior Software Engineer</p>
+            <h1>Designing scalable, secure systems for real-world impact.</h1>
+            <p class="subtitle">
+              Senior Software Engineer with <strong>9+ years</strong> building cloud-native platforms, high-scale data systems,
+              and enterprise integrations at <strong>Amazon</strong>.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#work">View Projects</a>
+              <a class="btn btn-secondary" href="assets/Tejasvi_Nuthalapati_Resume.pdf" download>Download Resume</a>
+              <a class="btn btn-ghost" href="#contact">Contact</a>
+            </div>
+            <div class="hero-metrics" aria-label="Impact highlights">
+              <div class="metric">
+                <div class="metric-value">250M+</div>
+                <div class="metric-label">operations/year supported</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">33%</div>
+                <div class="metric-label">query performance improvement</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">64%</div>
+                <div class="metric-label">reduction in unnecessary access</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">PB-scale</div>
+                <div class="metric-label">data systems designed</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-photo" aria-label="Portrait">
+            <img src="assets/tejasvi.png" alt="Tejasvi Nuthalapati" loading="eager" />
+          </div>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="section container" id="about">
+      <section class="section container" id="expertise">
         <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>What I focus on</h2>
+          <p class="eyebrow">Core expertise</p>
+          <h2>I drive measurable impact through systems engineering</h2>
         </div>
-        <p class="lead">
-          I focus on creating products and workflows that are user-friendly, reliable,
-          and measurable. My work blends software engineering, portfolio storytelling,
-          and continuous learning.
-        </p>
-        <div class="chips">
-          <span>Web Development</span>
-          <span>AI Workflows</span>
-          <span>Automation</span>
-          <span>Performance</span>
-          <span>Product Thinking</span>
+        <div class="grid-4">
+          <article class="expertise-card">
+            <h3>Cloud & Distributed Systems</h3>
+            <ul class="bullets">
+              <li>AWS (S3, Lambda, Redshift, IAM, KMS)</li>
+              <li>Microservices architecture</li>
+              <li>Event-driven systems</li>
+              <li>Multi-tenant system design</li>
+            </ul>
+          </article>
+          <article class="expertise-card">
+            <h3>Data Engineering & Analytics</h3>
+            <ul class="bullets">
+              <li>High-volume data pipelines (PB-scale)</li>
+              <li>ETL systems with near real-time SLAs</li>
+              <li>Parquet-based data lakes</li>
+              <li>Query optimization (~33% improvements)</li>
+            </ul>
+          </article>
+          <article class="expertise-card">
+            <h3>AI & GenAI Systems</h3>
+            <ul class="bullets">
+              <li>RAG-based systems</li>
+              <li>LangGraph, CrewAI, vLLM, MCP</li>
+              <li>Knowledge hubs across unstructured data</li>
+              <li>AI-assisted developer tooling</li>
+            </ul>
+          </article>
+          <article class="expertise-card">
+            <h3>Platform & Infrastructure Engineering</h3>
+            <ul class="bullets">
+              <li>Containerization (Docker, Kubernetes)</li>
+              <li>API design & backend systems</li>
+              <li>Observability & system reliability</li>
+              <li>Performance optimization at scale</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section class="section section-alt" id="projects">
+      <section class="section section-alt" id="work">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected Work</h2>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects with clear scope and measurable impact</h2>
           </div>
-          <p class="lead">
-            Add, remove, or edit these cards based on your exact project history.
-          </p>
-          <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+          <div class="project-grid" id="projectGrid" aria-live="polite">
+            <noscript>
+              <p class="lead">
+                This section uses a small script to render expandable cards. Please enable JavaScript to view projects.
+              </p>
+            </noscript>
+          </div>
         </div>
       </section>
 
-      <section class="section container" id="timeline">
+      <section class="section container" id="impact">
         <div class="section-heading">
-          <p class="eyebrow">Journey</p>
-          <h2>Milestones</h2>
+          <p class="eyebrow">Impact metrics</p>
+          <h2>Measurable outcomes</h2>
         </div>
-        <ol class="timeline">
-          <li>
-            <h3>Built a strong technical foundation</h3>
-            <p>
-              Developed full-stack fundamentals and practical delivery discipline through
-              projects and continuous learning.
-            </p>
-          </li>
-          <li>
-            <h3>Shipped portfolio-ready outcomes</h3>
-            <p>
-              Turned ideas into working products with clear architecture, readable code,
-              and measurable impact.
-            </p>
-          </li>
-          <li>
-            <h3>Expanded into AI-enhanced workflows</h3>
-            <p>
-              Integrated modern tools and AI patterns to improve speed, quality, and
-              maintainability.
-            </p>
-          </li>
-        </ol>
+        <div class="stats-grid" aria-label="Key metrics">
+          <div class="stat">
+            <div class="stat-value">250M+</div>
+            <div class="stat-label">operations/year supported</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">33%</div>
+            <div class="stat-label">improvement in query performance</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">64%</div>
+            <div class="stat-label">reduction in unnecessary service access</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">2 Petabyte scale</div>
+            <div class="stat-label">data systems designed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">50M+</div>
+            <div class="stat-label">users impacted (Fire TV platform)</div>
+          </div>
+        </div>
       </section>
 
-      <section class="section section-alt" id="references">
+      <section class="section section-alt" id="stack">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">References</p>
-            <h2>Useful Public Resources</h2>
+            <p class="eyebrow">Technical stack</p>
+            <h2>Skills summary</h2>
           </div>
-          <ul class="reference-list">
-            <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a> — Front-end and web standards reference.</li>
-            <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> — Project hosting and collaboration platform.</li>
-            <li><a href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a> — Performance and accessibility best practices.</li>
-            <li><a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> — Interface and design collaboration workflows.</li>
-            <li><a href="https://www.python.org/" target="_blank" rel="noreferrer">Python.org</a> — Language documentation and ecosystem resources.</li>
+          <div class="stack-grid">
+            <div class="stack-card">
+              <h3>Languages</h3>
+              <p class="stack-items">Java, Python, TypeScript, SQL, Scala, C/C++</p>
+            </div>
+            <div class="stack-card">
+              <h3>AI/GenAI</h3>
+              <p class="stack-items">LLMs, RAG, AI Agents, Model Context Protocol (MCP), LangGraph, CrewAI, vLLM, Prompt Engineering</p>
+            </div>
+            <div class="stack-card">
+              <h3>Backend</h3>
+              <p class="stack-items">Microservices, REST APIs, Distributed Systems, Event-Driven Architecture</p>
+            </div>
+            <div class="stack-card">
+              <h3>Data</h3>
+              <p class="stack-items">Data Modeling, ETL Pipelines, DynamoDB, Redshift, Advanced SQL (Joins, Optimization)</p>
+            </div>
+            <div class="stack-card">
+              <h3>Cloud/Infra</h3>
+              <p class="stack-items">AWS (S3, Lambda, ECS, IAM, KMS, Bedrock, SNS, SQS), GCP, Docker, Kubernetes</p>
+            </div>
+            <div class="stack-card">
+              <h3>Tools</h3>
+              <p class="stack-items">Git, Linux, PostgreSQL, MySQL</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="domain">
+        <div class="section-heading">
+          <p class="eyebrow">Domain expertise</p>
+          <h2>Proven across complex, high-stakes systems</h2>
+        </div>
+        <div class="two-col">
+          <article class="panel">
+            <h3>Enterprise & Government Systems</h3>
+            <p class="lead">Amazon Business + Japanese Government procurement integration.</p>
+          </article>
+          <article class="panel">
+            <h3>Privacy & Security Engineering</h3>
+            <p class="lead">Fine-grained access control systems for B2B2C data.</p>
+          </article>
+          <article class="panel">
+            <h3>Media & Platform Engineering</h3>
+            <p class="lead">Fire TV platform systems supporting 50M+ users.</p>
+          </article>
+          <article class="panel">
+            <h3>Industrial Data Systems</h3>
+            <p class="lead">High-frequency telemetry ingestion from IoT systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="leadership">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Leadership & influence</p>
+            <h2>Trusted to drive clarity and execution</h2>
+          </div>
+          <ul class="bullets bullets-lg">
+            <li>Led cross-team technical initiatives across multiple organizations</li>
+            <li>Designed systems used by enterprise customers and government entities</li>
+            <li>Translated ambiguous requirements into scalable architectures</li>
+            <li>Collaborated with external stakeholders and internal platform teams</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section container" id="differentiators">
+        <div class="section-heading">
+          <p class="eyebrow">Differentiators</p>
+          <h2>What makes Tejasvi's work reliable</h2>
+        </div>
+        <div class="grid-4">
+          <article class="callout">
+            <h3>Real-world impact</h3>
+            <p class="lead">Built production systems at enterprise and global scale.</p>
+          </article>
+          <article class="callout">
+            <h3>Cross-domain expertise</h3>
+            <p class="lead">Cloud + Data + Media + AI systems experience.</p>
+          </article>
+          <article class="callout">
+            <h3>Security-first engineering</h3>
+            <p class="lead">Designed systems with strong privacy and compliance focus.</p>
+          </article>
+          <article class="callout">
+            <h3>Builder + architect</h3>
+            <p class="lead">Hands-on coding with system-level thinking.</p>
+          </article>
         </div>
       </section>
 
       <section class="section container" id="contact">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
-          <h2>Let's build something meaningful</h2>
+          <h2>Open to senior engineering opportunities</h2>
         </div>
-        <p class="lead">
-          Reach out for collaborations, internships, and software opportunities.
-        </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:hello@example.com">Email Me</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="contact-card">
+          <div class="contact-lines">
+            <p class="lead"><strong>Email</strong>: <a href="mailto:ntejasvi2@gmail.com">ntejasvi2@gmail.com</a></p>
+            <p class="lead"><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/ntejasvi" target="_blank" rel="noreferrer">linkedin.com/in/ntejasvi</a></p>
+            <p class="lead"><strong>GitHub</strong>: <a href="https://github.com/nuthalat" target="_blank" rel="noreferrer">github.com/nuthalat</a></p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:ntejasvi2@gmail.com">Email</a>
+            <a class="btn btn-secondary" href="assets/Tejasvi_Nuthalapati_Resume.pdf" download>Click to Download Resume (PDF)</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="container footer-content">
-        <p>© <span id="year"></span> Tejasvi Nuthalapati. Built with clarity and purpose.</p>
-        <a href="#top">Back to top ↑</a>
+        <p>© <span id="year"></span> Tejasvi Nuthalapati.</p>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+        </div>
       </div>
     </footer>
 
